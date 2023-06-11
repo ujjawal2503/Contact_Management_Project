@@ -1,0 +1,13 @@
+server:
+  port: 8089
+spring:
+  datasource:
+    password: 12345
+    url: jdbc:postgresql://localhost:5432/ContactApplication
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
